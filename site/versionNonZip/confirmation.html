@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation de séance | Le Kino</title>
+
+  <!--* Description & Keywords (TODO:) *-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--* Favicons (TODO:) *-->
+  <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
+
+  <!--* Google Fonts *-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!--* Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+  <!--* Main CSS Files *-->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/vars.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!--* Vendor JS Files *-->
+  <script src="https://kit.fontawesome.com/b8af886c75.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+  <!--* Main JS Files *-->
+  <script src="assets/js/shortcuts.js"></script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="module">
+    <section class="section reservation">
+      <div class="section__container">
+        <div class="section__btn-back">
+          <a href="index.html" class="btn btn--back">
+            <span class="fas fa-chevron-left"></span>
+          </a>
+        </div>
+        <header class="section__header">
+          <h2 class="section__title section__title--primary">
+            <p>Confirmation de la séance</p>
+          </h2>
+          <div class="section__desc section__desc--primary">
+            <p>Tout payement sera effectuée sur place !</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="section-body__container">
+            <div class="ticket">
+              <div class="ticket__container">
+                <h3 class="title-h3">Détails</h3>
+              </div>
+              <div class="ticket__container ticket__container--invoice">
+                <div class="ticket__line ticket__line--start">
+                  <p class="js-ticket-date">10/10/2023</p>
+                  <p>Le Kino</p>
+                  <p class="js-ticket-room">Salle : 99</p>
+                </div>
+                <div class="ticket__line">
+                  <p class="js-ticket-movie-name">Aquaman et le Royaume perdu</p>
+                </div>
+                <div class="ticket__line">
+                  <p class="js-ticket-movie-infos">Tous / 2023 / 2h04</p>
+                </div>
+                <div class="ticket__line ticket__line--last">
+                  <p class="js-ticket-movie-genre">Action / Aventure / Fantastique</p>
+                </div>
+              </div>
+              <div class="ticket__container">
+                <h3 class="title-h3">Tickets :</h3>
+              </div>
+              <div class="ticket__container ticket__container--invoice">
+                <div class="ticket__line ticket__line--first ticket__line--cell-duo">
+                  <p>Nom de réservation :</p>
+                  <p>Identité</p>
+                </div>
+                <div class="ticket__line ticket__line--align-end  ticket__line--error hidden">
+                  <p>Le nom de réservation ne peut être vide !</p>
+                </div>
+                <div class="ticket__line ticket__line--cell-duo">
+                  <p>Tickets total :</p>
+                  <p class="js-remaining-ticket">0</p>
+                </div>
+                <div class="ticket__line ticket__line--center">
+                  <p>Tickets :</p>
+                </div>
+                <div class="ticket__line ticket__line--cell-duo">
+                  <div class="ticket-row-cell">Type</div>
+                  <div class="ticket-row-cell">Nombre</div>
+                  <div class="ticket-row-cell">Prix</div>
+                </div>
+                <div class="ticket__line ticket__line--cell-duo">
+                  <div class="ticket-row-cell">Enfant</div>
+                  <div class="ticket-row-cell">0</div>
+                  <div class="ticket-row-cell">0</div>
+                </div>
+                <div class="ticket__line ticket__line--cell-duo">
+                  <div class="ticket-row-cell">Etudiant</div>
+                  <div class="ticket-row-cell">0</div>
+                  <div class="ticket-row-cell">0</div>
+                </div>
+                <div class="ticket__line ticket__line--cell-duo">
+                  <div class="ticket-row-cell">Adulte</div>
+                  <div class="ticket-row-cell">0</div>
+                  <div class="ticket-row-cell">0</div>
+                </div>
+                <div class="ticket__line ticket__line--cell-duo">
+                  <div class="ticket-row-cell">Sénior</div>
+                  <div class="ticket-row-cell">0</div>
+                  <div class="ticket-row-cell">0</div>
+                </div>
+                <div class="ticket__line ticket__line--end ticket__line--cell-duo">
+                  <div class="ticket-row-cell">Total:</div>
+                  <div class="ticket-row-cell">0</div>
+                  <div class="ticket-row-cell">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket__container ticket__container--actions">
+              <a href="index.html" class="btn btn--primary">Annuler</a>
+              <a href="index.html" class="btn btn--secondary">Valider</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+
+</html>

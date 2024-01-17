@@ -1,0 +1,150 @@
+/****************************************\
+ ** VARS
+/****************************************/
+
+/*-----------------------------------*\
+ ** XM
+\*-----------------------------------*/
+
+:root {
+  /* fonts list */
+  --ff-default: 'Roboto', sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Poppins', sans-serif;
+  --ff-utility: 'Open Sans', sans-serif;
+
+  /* body */
+  --body-d-bg: rgb(255, 255, 255);
+  --body-d-clr: rgb(0, 0, 0);
+  --body-d-ff: var(--ff-default);
+
+  /* titles */
+  --title-h3--bc: #F5C518;
+
+  /* button: base */
+  --btn--border: 2px solid transparent;
+
+  /* button: back */
+  --btn-back--bc: #162032;
+  --btn-back--bg: #ECECEC;
+  --btn-back--clr: #2B2B2B;
+  
+  --btn-back--active-clr: #2C82C8;
+  --btn-back--active-bg: transparent;
+  --btn-back--active-bc: #2C82C8;
+
+  /* button: tab */
+  --btn-tab--clr: #2B2B2B;
+  --btn-tab--bc: #162032;
+  --btn-tab--bg: #ECECEC;
+
+  --btn-tab--active-clr: #2C82C8;
+  --btn-tab--active-top-bc: #2C82C8;
+  --btn-tab--active-bottom-bc: transparent;
+  --btn-tab--active-bg: transparent;
+
+  --btn-tab--hover-bg: #ECECEC;
+  --btn-tab--hover-bc: #162032; /*ff0000;*/
+  --btn-tab--hover-border-style: dashed;
+  --btn-tab--hover-active-top-bc: #2C82C8;
+  --btn-tab--hover-active-bottom-bc: transparent;
+
+  --btn-tab--focus-bc: #162032; /*ff0000;*/;
+  --btn-tab--focus-active-bc: #2C82C8;
+  --btn-tab--focus-active-top-bc: #2C82C8;
+  --btn-tab--focus-active-bottom-bc: transparent;
+
+  /* button: primary & secondary */
+  --btn--primary-bg: #FF0000;
+  --btn--primary-bc: #FF0000;
+  --btn--primary-clr: #fff;
+  --btn--primary-visited-bg: #FF0000;
+  --btn--primary-visited-bc: #FF0000;
+  --btn--primary-visited-clr: #fff;
+  --btn--primary-focus-bg: #fff;
+  --btn--primary-focus-bc: #FF0000;
+  --btn--primary-focus-clr: #FF0000;
+  --btn--primary-visited-focus-bg: #fff;
+  --btn--primary-visited-focus-bc: #FF0000;
+  --btn--primary-visited-focus-clr: #FF0000;
+  --btn--primary-hover-bg: #fff;
+  --btn--primary-hover-bc: #000;
+  --btn--primary-hover-clr: #FF0000;
+  --btn--primary-visited-hover-bg: #fff;
+  --btn--primary-visited-hover-bc: #000;
+  --btn--primary-visited-hover-clr: #FF0000;
+  --btn--primary-active-bg: #fff;
+  --btn--primary-active-bc: #FF0000;
+  --btn--primary-active-clr: #000;
+  --btn--primary-active-focus-bg: #fff;
+  --btn--primary-active-focus-bc: #FF0000;
+  --btn--primary-active-focus-clr: #000;
+  --btn--primary-active-hover-bg: #FF0000;
+  --btn--primary-active-hover-bc: #000;
+  --btn--primary-active-hover-clr: #fff;
+  --btn--primary-disabled-bg: #ECECEC;
+  --btn--primary-disabled-bc: #ECECEC;
+  --btn--primary-disabled-clr: #000;
+  --btn--primary-disabled-strike: #000;
+
+  --btn--secondary-bg: #B37F41;
+  --btn--secondary-bc: #B37F41;
+  --btn--secondary-clr: #fff;
+  --btn--secondary-visited-bg: #B37F41;
+  --btn--secondary-visited-bc: #B37F41;
+  --btn--secondary-visited-clr: #fff;
+  --btn--secondary-focus-bg: #fff;
+  --btn--secondary-focus-bc: #FF0000;
+  --btn--secondary-focus-clr: #FF0000;
+  --btn--secondary-hover-bg: #fff;
+  --btn--secondary-hover-bc: #000;
+  --btn--secondary-hover-clr: #FF0000;
+  --btn--secondary-visited-hover-bg: #fff;
+  --btn--secondary-visited-hover-bc: #000;
+  --btn--secondary-visited-hover-clr: #FF0000;
+  --btn--secondary-disabled-bg: #ECECEC;
+  --btn--secondary-disabled-bc: #ECECEC;
+  --btn--secondary-disabled-clr: #000;
+  --btn--secondary-disabled-strike: #000;
+
+  /* tabs */
+  --tabs-movies-screenings--bc: transparent; /*#162032;*/
+  --tabs-movies-screenings--bg: transparent; /*#ECECEC;*/
+
+  --tabs-movies-file--bc: transparent; /*#162032;*/
+  --tabs-movies-file--bg: transparent; /*#ECECEC;*/
+
+  /* accordion */
+  --accordion-header--bg: #E3E0E0;
+  --accordion-header--focusAndHover-bg: rgba(0, 0, 0, 20%);
+
+  /* cards */
+  --card--border: 2px solid #162032;
+  --card--bg: transparent;
+  --card--shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  --card-title--fm: var(--ff-secondary);
+  --card-title--lh: 1.625rem;
+  --card-target--bg: #b3b3b3;
+
+  /* section */
+  --section-header--padd: 10px;
+  --section-header--bc: #2B2B2B;
+  --section-title--ft: 1.375rem;
+  --section-title--ff: var(--ff-primary);
+
+  --file-detail-genre--bc: #b3b3b3;
+  --file-detail-crew--bc: #b3b3b3;
+  --file-detail-crew--bc: #b3b3b3;
+  --file-detail-crew-staff--td: #b3b3b3;
+
+  /* reservation */
+  --ticket-invoice-line-bc: #162032;
+  --ticket-invoice-line-bg: #162032;
+  --ticket-invoice-line-clr: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    --section-header--padd: 20px;
+  }
+}
